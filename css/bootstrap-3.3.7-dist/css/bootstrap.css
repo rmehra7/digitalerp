@@ -4173,6 +4173,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 100%;
   margin-bottom: 1px;
   border: 1px solid transparent;
+  z-index: 1000;
 }
 @media (min-width: 768px) {
   .navbar {
