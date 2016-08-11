@@ -18,6 +18,7 @@
 	<script src="css/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
 	<script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 	<script src="css/bootstrap-3.3.7-dist/js/modernizr.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 	<style>
 
@@ -26,7 +27,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  min-height: 400px;
+  min-height: 630px;
   padding-bottom: 20px;
     margin-top: 50px;
     background-color: gainsboro;
@@ -197,7 +198,12 @@
     color: white;
     border:none;
   }
-
+#map{
+	min-height: 425px;
+}
+#inner-row{
+  	margin-left: 20%;
+  }
  
   </style>
 
@@ -246,12 +252,37 @@
                             <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
                             <!-- Subject -->
                             <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
-                        </div><!-- End Left Inputs -->
-                        <!-- Right Inputs -->
-                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                        
                             <!-- Message -->
                             <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
                         </div><!-- End Right Inputs -->
+                        <!-- map -->
+                        <div id="map" class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+
+                        </div>
+                        
+						<script>	
+ 							function init_map() {
+								var var_location = new google.maps.LatLng(22.7229, 75.8845);
+ 
+        						var var_mapoptions = {
+          							center: var_location,
+          							zoom: 14
+        						};
+ 
+								var var_marker = new google.maps.Marker({
+									position: var_location,
+									map: var_map,
+									title:"Digital Marketing Pvt. Ltd."});
+ 
+        						var var_map = new google.maps.Map(document.getElementById("map"),
+            						var_mapoptions);
+ 
+								var_marker.setMap(var_map);	
+ 							}
+ 							google.maps.event.addDomListener(window, 'load', init_map);
+ 						</script>
+                        
                         <!-- Bottom Submit -->
                         <div class="relative fullwidth col-xs-12">
                             <!-- Send Button -->
@@ -261,7 +292,7 @@
                         <div class="clear"></div>
                     </form>
 
-                    <!-- Your Mail Message -->
+                    <!-- Your Mail Message --><br><br>
                     <div class="mail-message-area">
                         <!-- Message -->
                         <div class="alert gray-bg mail-message not-visible-message">
@@ -278,36 +309,25 @@
 
   <!-- </main> -->
   </div><!-- /#wrapper -->
-  <div class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> 406 B, 407, 4th Floor, Apollo Tower,
-      <br>&nbsp;&nbsp;&nbsp;&nbsp; 2, M.G. Road, Indore(M.P.),
-      <br>&nbsp;&nbsp;&nbsp;&nbsp; India, 452001.</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +91 073 2527100,
-      <br>&nbsp;&nbsp;&nbsp;&nbsp; +91 073 2520250</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> rafullaj@gmail.com</p>
-    </div>
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- Footer -->
+  	<div class="container-fluid bg-grey">
+  		<h3 class="text-center">CONTACT</h3>
+  		<div class="row">
+	  		<p align="center">Contact us and we'll get back to you within 24 hours.</p>
+	    	<div class="col-sm-6">
+	      		<p align="center"><span class="glyphicon glyphicon-map-marker"></span> 406 B, 407, 4th Floor, Apollo Tower,
+	      		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2, M.G. Road, Indore(M.P.), India, 452001.</p>
+	      	</div>
+    	
+    		<div class="col-sm-6">
+      			<div class="row" id="inner-row">
+          			<p><span class="glyphicon glyphicon-phone"></span> +91 073 2527100,
+            		+91 073 2520250<br>
+            		<span class="glyphicon glyphicon-envelope"></span> prafullaj@gmail.com</p>
+        		</div>
+      		</div>
+    	</div>
+	</div>
 
 		
 	</body>
