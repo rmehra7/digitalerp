@@ -1,0 +1,254 @@
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+  <title>About us</title>
+
+   <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/base.css">
+  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.overide.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/normalize.css">
+
+  <!-- js -->
+  <script src="css/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+  <script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script src="css/bootstrap-3.3.7-dist/js/modernizr.js"></script>
+
+  <style>
+
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+
+  </style>
+
+  <style type="text/css">
+    .contact{
+    padding:10px 0px 10px;
+    margin-top: 0px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#8BC3A3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+  #inner-row{
+    margin-left: 20%;
+  }
+ 
+  </style>
+
+</head>
+  <body>
+  
+  <nav class="navbar navbar-inverse">
+  <!-- <div class="container-fluid"> -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"> DigitalERP </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About us</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    <!-- </div> -->
+  </div>
+  </nav>
+
+  <div class="wrapper">
+
+  <!-- <main class="content"> -->
+      <section class="module parallax parallax-5">
+        <!-- <div class="container">
+          <h1>Digital ERP</h1>
+        </div> -->
+      </section>
+      
+      <section class="module content">
+        <div class="container">
+          <h2>About us</h2>
+          <p>We are an established business group of central India in business for the past 25 years. We have interest in the fields of Trading, Manufacturing and Construction. We have in-depth exposure to various business processes. We are an ISO 9000-2008 accredited company.</p>
+
+          <p>We have now diversified into Software and IT industry. We have a team of young and dynamic professional, who understand the business process and provide cost effective, world class software and IT services.</p>
+        </div>
+      </section>
+     
+
+  <!-- </main> -->
+  </div><!-- /#wrapper -->
+  <!-- Footer -->
+    <div class="container-fluid bg-grey">
+      <h3 class="text-center">CONTACT</h3>
+      <div class="row">
+        <p align="center">Contact us and we'll get back to you within 24 hours.</p>
+        <div class="col-sm-6">
+            <p align="center"><span class="glyphicon glyphicon-map-marker"></span> 406 B, 407, 4th Floor, Apollo Tower,
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2, M.G. Road, Indore(M.P.), India, 452001.</p>
+          </div>
+      
+        <div class="col-sm-6">
+            <div class="row" id="inner-row">
+                <p><span class="glyphicon glyphicon-phone"></span> +91 073 2527100,
+                +91 073 2520250<br>
+                <span class="glyphicon glyphicon-envelope"></span> prafullaj@gmail.com</p>
+            </div>
+          </div>
+      </div>
+  </div>
+
+    
+  </body>
+</html>
