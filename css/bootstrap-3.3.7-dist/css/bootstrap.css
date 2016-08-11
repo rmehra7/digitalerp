@@ -1599,10 +1599,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 100%;
-    /*padding-bottom: 20px;*/
-    /*margin-top: 20px;*/
-    /*background-color: gainsboro;*/
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -1610,7 +1607,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: black;
 }
 .row {
   margin-right: -15px;
@@ -4168,12 +4164,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar {
-  position: fixed;
+  position: relative;
   min-height: 50px;
-  width: 100%;
-  margin-bottom: 1px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
-  z-index: 1000;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4280,8 +4274,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 25px 36%;
-  font-size: 25px;
+  padding: 15px 15px;
+  font-size: 18px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4359,8 +4353,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: right;
-    margin: 10px 10%;
+    float: left;
+    margin: 0;
   }
   .navbar-nav > li {
     float: left;
