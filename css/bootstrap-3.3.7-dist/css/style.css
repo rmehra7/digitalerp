@@ -51,6 +51,9 @@ section.module.parallax-3 {
 section.module.parallax-4 {
   background-image: url("../img/4.jpg");
 }
+section.module.parallax-5 {
+  background-image: url("../img/5.jpg");
+}
 
 @media all and (min-width: 600px) {
   section.module h2 {
