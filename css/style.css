@@ -349,8 +349,8 @@ section.module.parallax-2 {
 section.module.parallax-3 {
   background-image: url("../img/3.jpg");
 }
-section.module.parallax-4 {
-  background-image: url("../img/4.jpg");
+section.module.parallax-service-integration {
+  background-image: url("../img/service_integration.jpg");
 }
 section.module.parallax-5 {
   background-image: url("../img/5.jpg");
@@ -372,3 +372,9 @@ section.module.parallax-5 {
     font-size: 160px;
   }
 }
+
+img.Image { max-width: 100%;}
+
+.container-odoo-service{
+    padding: 10%;
+  }
