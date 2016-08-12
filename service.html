@@ -64,13 +64,20 @@
   #inner-row{
     margin-left: 20%;
   }
+  .test{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
   </style>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav id="header" class="navbar navbar-inverse">
   <!-- <div class="container-fluid"> -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -91,6 +98,17 @@
     </div>
   <!-- </div> -->
 </nav>
+<script>
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          document.getElementById("header").className = "test";
+      }else{
+        document.getElementById("header").className = "navbar navbar-inverse";
+      }
+}
+</script>
 
 <div class="wrapper">
 
