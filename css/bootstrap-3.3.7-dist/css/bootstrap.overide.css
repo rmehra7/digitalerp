@@ -95,5 +95,24 @@
 .test .navbar-toggle {
     border-color: #AE5959;
 }
-
-  
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+}
+.col-sm-4 .container-odoo-service .row > img {
+    height: 180px;
+    width: 270px;
+    margin-left: 0;
+}
+.col-sm-4 .container-odoo-service .row > span {
+  font-size: 20px;
+}
+.col-sm-4 .row > img {
+  margin-left: 7%;
+}
+.col-sm-8 {
+  margin-left: 2%;
+  width: 60%;
+  font-size: 20px;
+}
