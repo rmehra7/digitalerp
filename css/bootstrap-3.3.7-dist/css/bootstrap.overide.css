@@ -31,7 +31,7 @@
   background-color: black;
 }
 
-.navbar {
+.navbar, .test {
   position: fixed;
   min-height: 50px;
   width: 100%;
@@ -40,7 +40,7 @@
   z-index: 1000;
 }
 @media (min-width: 768px) {
-  .navbar {
+  .navbar, .test {
     border-radius: 4px;
   }
 }
@@ -64,4 +64,36 @@
     float: right;
     margin: 10px 10%;
   }
+
+  #inner-row{
+    margin-left: 20%;
+  }
+  .test{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navbar-logo {
+  float: left;
+  height: 55px;
+  padding: 2px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+  .test .navbar-nav > li > a {
+    color: black;
+  }
+  .test .navbar-nav > .active > a,
+ .test .navbar-nav > .active > a:hover,
+ .test .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.test .navbar-toggle {
+    border-color: #AE5959;
+}
+
   
