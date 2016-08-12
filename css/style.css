@@ -323,7 +323,7 @@ section.module.content {
 }
 section.module.parallax {
   height: 600px;
-  background-position: 50% 20%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -331,6 +331,7 @@ section.module.parallax {
   -o-background-size: cover;
   background-size: cover;
 }
+
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
@@ -349,11 +350,14 @@ section.module.parallax-2 {
 section.module.parallax-3 {
   background-image: url("../img/3.jpg");
 }
-section.module.parallax-service-integration {
+.parallax-service-integration {
   background-image: url("../img/service_integration.jpg");
 }
 section.module.parallax-5 {
   background-image: url("../img/5.jpg");
+}
+section.module.parallax-6 {
+  background-image: url("../img/odoo_silver_partner_rgb.png");
 }
 
 @media all and (min-width: 600px) {
