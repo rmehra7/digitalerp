@@ -4,7 +4,7 @@
 <head>
   <!-- title and meta -->
   <meta charset="utf-8">
-  <link rel="icon" href="css/bootstrap-3.3.7-dist/img/icon.ico">
+  <link rel="icon" href="img/icon.ico">
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
   <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
 
@@ -23,6 +23,7 @@
 	<script src="css/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
 	<script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 	<script src="css/bootstrap-3.3.7-dist/js/modernizr.js"></script>
+  <script src="js/script.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -38,7 +39,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-logo" href="index.html"> <img src="css/bootstrap-3.3.7-dist/img/logo.jpg"> </a>
+      <a class="navbar-logo" href="index.html"> <img src="img/logo.jpg"> </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -51,17 +52,7 @@
     </div>
   <!-- </div> -->
 </nav>
-<script>
-  window.onscroll = function() {myFunction()};
 
-  function myFunction() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          document.getElementById("header").className = "test";
-      }else{
-        document.getElementById("header").className = "navbar navbar-inverse";
-      }
-}
-</script>
 
 <div class="wrapper">
 
