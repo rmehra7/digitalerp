@@ -322,14 +322,14 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 450px;
-  background-position: 50% 20%;
+  height: 600px;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  /*background-size: cover;*/
+  background-size: cover;
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
