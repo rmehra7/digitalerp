@@ -352,8 +352,8 @@ section.module.parallax-3 {
 section.module.parallax-service-integration {
   background-image: url("../img/service_integration.jpg");
 }
-section.module.parallax-5 {
-  background-image: url("../img/5.jpg");
+section.module.parallax-about-us {
+  background-image: url("https://www.odoo.com/openerp_website/static/src/img/assets/png/odoo_silver_partner_rgb.png");
 }
 
 @media all and (min-width: 600px) {
@@ -378,3 +378,7 @@ img.Image { max-width: 100%;}
 .container-odoo-service{
     padding: 10%;
   }
+
+.clear{
+  padding: 10px;
+}
