@@ -35,6 +35,12 @@
 	        -o-background-size: cover;
 	        /*background-size: cover;*/
       	}
+      	nav.home .home,
+nav.team.team,
+nav.about .about,
+nav.contact .contact{
+	background-color:#5867E3;
+}
     </style>
 
 	</head>
@@ -51,9 +57,18 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-				<li><a href="#index" class="home" ng-click="active='home'">Home</a></li>
-				<li><a href="#about" class="about" ng-click="active='about'">About us</a></li>
-				<li><a href="#service" class="service" ng-click="active='service'">Service</a></li>
+				<li class="active"><a href="#index">Home</a></li>
+				<li><a href="#about">About us</a></li>
+				<li class="dropdown">
+        			<a class="dropdown-toggle" data-toggle="dropdown" href="">Services
+        			<span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+          				<li><a href="#service">ERP Implementation</a></li>
+          				<li><a href="">Website / E-Commerce</a></li>
+          				<li><a href="">SEO</a></li>
+          				<li><a href="">Digital Marketing</a></li>
+        			</ul>
+      			</li>
 				<!-- <li><a href="team.html">Team</a></li> -->
 				<!-- <li><a href="contact.html">Contact us</a></li> -->
 			</ul>
@@ -80,6 +95,17 @@
                redirectTo: '/index'
             });
          }]);
+
+
+		// mainApp.controller("con",function($scope){
+  // 			$scope.class = "active";
+  // 			$scope.changeClass = function(){
+  //   			if ($scope.class === "active")
+  //     				$scope.class = "";
+  //   			else
+  //     				$scope.class = "active";
+  // 			};
+		// });
 		</script>
 
 	</nav>
