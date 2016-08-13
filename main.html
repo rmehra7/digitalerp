@@ -7,7 +7,7 @@
 	  	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 	  	<meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
 		
-		<title></title>
+		<title>DigitalERP</title>
 		
 		<!-- css -->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
@@ -24,25 +24,6 @@
 		<script src="css/bootstrap-3.3.7-dist/js/modernizr.js"></script>
 		<script src="js/script.js"></script>
 
-		<style type="text/css">
-      	.parallax-service-integration {
-	        height: 450px;
-	        background-position: 50% 20%;
-	        background-repeat: no-repeat;
-	        background-attachment: fixed;
-	        -webkit-background-size: cover;
-	        -moz-background-size: cover;
-	        -o-background-size: cover;
-	        /*background-size: cover;*/
-      	}
-      	nav.home .home,
-nav.team.team,
-nav.about .about,
-nav.contact .contact{
-	background-color:#5867E3;
-}
-    </style>
-
 	</head>
 <body ng-app = "mainApp">
 	<!-- HEADER-START -->
@@ -57,16 +38,16 @@ nav.contact .contact{
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#index">Home</a></li>
-				<li><a href="#about">About us</a></li>
+				<li class="active"><a href="#index" ng-click="title = 'Home'">Home</a></li>
+				<li><a href="#about" ng-click="title = 'About us'">About us</a></li>
 				<li class="dropdown">
         			<a class="dropdown-toggle" data-toggle="dropdown" href="">Services
         			<span class="caret"></span></a>
         			<ul class="dropdown-menu">
-          				<li><a href="#service">ERP Implementation</a></li>
-          				<li><a href="">Website / E-Commerce</a></li>
-          				<li><a href="">SEO</a></li>
-          				<li><a href="">Digital Marketing</a></li>
+          				<li><a href="#erp-implementation">ERP Implementation</a></li>
+          				<li><a href="#website">Website / E-Commerce</a></li>
+          				<li><a href="#seo">SEO</a></li>
+          				<li><a href="#digital-marketing">Digital Marketing</a></li>
         			</ul>
       			</li>
 				<!-- <li><a href="team.html">Team</a></li> -->
@@ -74,39 +55,7 @@ nav.contact .contact{
 			</ul>
 		</div>
 
-		<script>
-         var mainApp = angular.module("mainApp", ['ngRoute']);
-         mainApp.config(['$routeProvider', function($routeProvider) {
-            $routeProvider.
-            
-            when('/index', {
-               templateUrl: 'index.html',
-            }).
-            
-            when('/about', {
-               templateUrl: 'about.html',
-            }).
-
-            when('/service', {
-               templateUrl: 'service.html',
-            }).
-            
-            otherwise({
-               redirectTo: '/index'
-            });
-         }]);
-
-
-		// mainApp.controller("con",function($scope){
-  // 			$scope.class = "active";
-  // 			$scope.changeClass = function(){
-  //   			if ($scope.class === "active")
-  //     				$scope.class = "";
-  //   			else
-  //     				$scope.class = "active";
-  // 			};
-		// });
-		</script>
+		<script src="js/angular-script.js"></script>
 
 	</nav>
 	<!-- HEADER-END -->
