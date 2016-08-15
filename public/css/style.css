@@ -393,3 +393,132 @@ img.Image { max-width: 100%;}
 .container-odoo-service{
     padding: 10%;
   }
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    /*padding-bottom: 20px;*/
+    /*margin-top: 20px;*/
+    /*background-color: gainsboro;*/
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+}
+
+.navbar, .test {
+  position: fixed;
+  min-height: 50px;
+  width: 100%;
+  margin-bottom: 1px;
+  border: 1px solid transparent;
+  z-index: 1000;
+}
+@media (min-width: 768px) {
+  .navbar, .test {
+    border-radius: 4px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: right;
+    margin: 10px 10%;
+  }
+
+  #inner-row{
+    margin-left: 20%;
+  }
+  .test{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navbar-logo {
+  float: left;
+  height: 55px;
+  padding: 2px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+  .test .navbar-nav > li > a {
+    color: black;
+  }
+  .test .navbar-nav > .active > a,
+ .test .navbar-nav > .active > a:hover,
+ .test .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.test .navbar-toggle {
+    border-color: #AE5959;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+}
+.col-sm-4 .container-odoo-service .row > img {
+    height: 180px;
+    width: 270px;
+    margin-left: 0;
+}
+.col-sm-4 .container-odoo-service .row > span {
+  font-size: 20px;
+}
+.col-sm-4 .row > img {
+  margin-left: 7%;
+}
+.col-sm-8 {
+  margin-left: 2%;
+  width: 60%;
+  font-size: 20px;
+}
+.parallax-service-integration {
+  height: 450px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /*background-size: cover;*/
+  }

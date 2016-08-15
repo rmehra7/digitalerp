@@ -16,11 +16,48 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
          controller: 'IndexCtl'
       })
 
+      .when('/about', {
+         templateUrl: 'partials/about.html',
+         controller: 'AboutCtl'
+      })
+
+      .when('/erp', {
+         templateUrl: 'partials/erp-implementation.html',
+         controller: 'erpCtl'
+      })
+
+      .when('/digitalmarketing', {
+         templateUrl: 'partials/digital-marketing.html',
+         controller: 'DigitalMarketingCtl'
+      })
+
+      .when('/seo', {
+         templateUrl: 'partials/seo.html',
+         controller: 'SeoCtl'
+      })
+
+      .when('/website', {
+         templateUrl: 'partials/website.html',
+         controller: 'AboutCtl'
+      })
+
+      .when('/team', {
+         templateUrl: 'partials/team.html',
+         controller: 'AboutCtl'
+      })
+
+      .when('/contact', {
+         templateUrl: 'partials/contact.html',
+         controller: 'AboutCtl'
+      })
+
+
+
    $locationProvider.html5Mode(true);
 
 }]);
 
-app.controller('IndexCtl', function($scope, $http, $location, $route) {
+app.controller('NavCtl', function($scope, $http, $location, $route) {
 
    $scope.home = function(){
       $location.path('/');
@@ -28,6 +65,30 @@ app.controller('IndexCtl', function($scope, $http, $location, $route) {
 
    $scope.about = function(){
       $location.path('/about');
+   }
+
+   $scope.erp = function() {
+      $location.path('/erp')
+   }
+
+   $scope.website = function() {
+      $location.path('/website')
+   }
+
+   $scope.digitalmarketing = function() {
+      $location.path('/digitalmarketing')
+   }
+
+   $scope.seo = function() {
+      $location.path('/seo')
+   }
+
+   $scope.contact = function() {
+      $location.path('/contact')
+   }
+
+   $scope.team = function() {
+      $location.path('/team')
    }
 
 });
