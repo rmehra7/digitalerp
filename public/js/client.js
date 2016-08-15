@@ -13,7 +13,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
       .when('/', {
          templateUrl: 'partials/index.html',
-         controller: 'IndexCtl'
+         controller: 'NavCtl'
       })
 
       .when('/about', {
@@ -31,9 +31,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
          controller: 'DigitalMarketingCtl'
       })
 
-      .when('/seo', {
-         templateUrl: 'partials/seo.html',
-         controller: 'SeoCtl'
+      .when('/mobile', {
+         templateUrl: 'partials/mobile.html',
+         controller: 'MobileCtl'
       })
 
       .when('/website', {
@@ -79,8 +79,8 @@ app.controller('NavCtl', function($scope, $http, $location, $route) {
       $location.path('/digitalmarketing')
    }
 
-   $scope.seo = function() {
-      $location.path('/seo')
+   $scope.mobile = function() {
+      $location.path('/mobile')
    }
 
    $scope.contact = function() {

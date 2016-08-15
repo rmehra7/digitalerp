@@ -321,56 +321,6 @@ section.module p:last-child {
 section.module.content {
   padding: 40px 0;
 }
-section.module.parallax {
-  height: 600px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-section.mid-parallax-fix{
-  height: 500px;
-  /*background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
-  background-size: cover;
-  margin: 0 10%;
-}
-
-section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-section.module.parallax-1 {
-  background-image: url("../img/1.jpg");
-}
-section.module.parallax-2 {
-  background-image: url("../img/2.jpg");
-}
-section.module.parallax-3 {
-  background-image: url("../img/3.jpg");
-}
-.parallax-service-integration {
-  background-image: url("../img/service_integration.jpg");
-}
-section.module.parallax-5 {
-  background-image: url("../img/5.jpg");
-}
-section.mid-parallax-fix {
-  background-image: url("../img/odoo_silver_partner_rgb.png");
-}
-
 @media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
@@ -379,12 +329,14 @@ section.mid-parallax-fix {
     font-size: 20px;
   }
   section.module.parallax h1 {
-    font-size: 96px;
+    padding-top: 80px;
+    font-size: 80px;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 160px;
+    padding-top: 100px;
+    font-size: 100px;
   }
 }
 
@@ -522,3 +474,88 @@ img.Image { max-width: 100%;}
   -o-background-size: cover;
   /*background-size: cover;*/
   }
+
+.parallax-service-digital-marketing {
+  min-height: 500px;
+  background-image: url("../img/service-digital-marketing-banner.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  }
+
+.parallax-service-ecommerce {
+  min-height: 500px;
+  background-image: url("../img/service-ecommerce-banner.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  }
+
+.parallax-service-mobile-development {
+  min-height: 500px;
+  background-image: url("../img/service-mobile-development-banner.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  }
+
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.mid-parallax-fix{
+  height: 500px;
+  /*background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  background-size: cover;
+  margin: 0 10%;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 80 px;
+  text-align: center;
+}
+section.module.parallax-index {
+  background-image: url("../img/business-grow.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../img/2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/3.jpg");
+}
+.parallax-service-integration {
+  background-image: url("../img/service_integration.jpg");
+}
+section.module.parallax-5 {
+  background-image: url("../img/5.jpg");
+}
+section.mid-parallax-fix {
+  background-image: url("../img/odoo_silver_partner_rgb.png");
+}
+
+
+
+.logos-container{
+  padding-top: 50px;
+}
