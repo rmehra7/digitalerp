@@ -26,5 +26,5 @@ var var_map = new google.maps.Map(document.getElementById("map"),
 
 var_marker.setMap(var_map);	
 }
-google.maps.event.addDomListener(window, 'load', init_map);
+// google.maps.event.addDomListener(window, 'load', init_map);
 
