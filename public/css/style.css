@@ -475,18 +475,6 @@ img.Image { max-width: 100%;}
   background-size: cover;
   }
 
-.parallax-service-integration {
-  height: 450px;
-  background-image: url("../img/service_integration.jpg");
-  background-position: 50% 20%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  /*background-size: cover;*/
-  }
-
 .parallax-service-digital-marketing {
   height: 600px;
   background-image: url("../img/digital-marketing.jpg");
@@ -512,15 +500,16 @@ img.Image { max-width: 100%;}
   }
 
 .parallax-service-mobile-development {
-  height: 400px;
+  height: 600px;
   background-image: url("../img/mobile-development.jpg");
-  background-position: 50% 0%;
+  background-position: 40% 20%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  }
+  background-size: cover;
+}
 
 section.module.parallax {
   height: 600px;
@@ -534,15 +523,16 @@ section.module.parallax {
 }
 section.mid-parallax-fix{
   height: 500px;
-  /*background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
   background-size: cover;
   margin: 0 10%;
 }
+.parallax-service-integration {
+  height: 450px;
+  background-image: url("../img/service-integration.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
 
 section.module.parallax h1 {
   color: rgba(29, 27, 28, 0.8);
