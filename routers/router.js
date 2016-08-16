@@ -6,4 +6,7 @@ module.exports = function(app) {
 		res.sendfile("./views/index.html");
 	});
 	
+	app.use(function(req, res){
+	   res.sendfile("./views/index.html");
+	});
 }
