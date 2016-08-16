@@ -51,7 +51,7 @@
     background-color: gainsboro;
 }
 .navbar-band{visibility: hidden;}
-@media (min-width: 768px) {
+@media (min-width: 268px) {
   .form-container {
     width: 750px;
   }
@@ -464,8 +464,20 @@ img.Image { max-width: 100%;}
   width: 60%;
   font-size: 20px;
 }
+.parallax-index {
+  height: 600px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
 .parallax-service-integration {
   height: 450px;
+  background-image: url("../img/service_integration.jpg");
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -476,31 +488,33 @@ img.Image { max-width: 100%;}
   }
 
 .parallax-service-digital-marketing {
-  min-height: 500px;
-  background-image: url("../img/service-digital-marketing-banner.jpg");
-  background-position: 50% 20%;
+  height: 600px;
+  background-image: url("../img/digital-marketing.jpg");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
   }
 
 .parallax-service-ecommerce {
-  min-height: 500px;
-  background-image: url("../img/service-ecommerce-banner.jpg");
-  background-position: 50% 20%;
+  height: 600px;
+  background-image: url("../img/website-developement.jpg");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
   }
 
 .parallax-service-mobile-development {
-  min-height: 500px;
-  background-image: url("../img/service-mobile-development-banner.jpg");
-  background-position: 50% 20%;
+  height: 400px;
+  background-image: url("../img/mobile-development.jpg");
+  background-position: 50% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -531,21 +545,18 @@ section.mid-parallax-fix{
 }
 
 section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(29, 27, 28, 0.8);
   font-size: 80 px;
   text-align: center;
 }
 section.module.parallax-index {
-  background-image: url("../img/business-grow.jpg");
+  background-image: url("../img/index.jpg");
 }
 section.module.parallax-2 {
   background-image: url("../img/2.jpg");
 }
 section.module.parallax-3 {
   background-image: url("../img/3.jpg");
-}
-.parallax-service-integration {
-  background-image: url("../img/service_integration.jpg");
 }
 section.module.parallax-5 {
   background-image: url("../img/5.jpg");
