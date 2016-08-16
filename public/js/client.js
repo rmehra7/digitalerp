@@ -7,6 +7,7 @@ app.config(['$locationProvider', function($locationProvider){
 }).hashPrefix('!');
 }]);
 
+
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
    $routeProvider
@@ -38,17 +39,17 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
       .when('/website', {
          templateUrl: 'partials/website.html',
-         controller: 'AboutCtl'
+         controller: 'WebCtl'
       })
 
       .when('/team', {
          templateUrl: 'partials/team.html',
-         controller: 'AboutCtl'
+         controller: 'TeamCtl'
       })
 
       .when('/contact', {
          templateUrl: 'partials/contact.html',
-         controller: 'AboutCtl'
+         controller: 'CntCtl'
       })
 
 
@@ -92,3 +93,54 @@ app.controller('NavCtl', function($scope, $http, $location, $route) {
    }
 
 });
+
+app.service('MetaService', function() {
+       var title = '';
+       var metaDescription = '';
+       var metaKeywords = '';
+       return {
+          set: function(newTitle, newMetaDescription, newKeywords) {
+              metaKeywords = newKeywords;
+              metaDescription = newMetaDescription;
+              title = newTitle; 
+          },
+          metaTitle: function(){ return title; },
+          metaDescription: function() { return metaDescription; },
+          metaKeywords: function() { return metaKeywords; }
+       }
+    });
+
+   app.controller('AboutCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: About","desc","blah blah");
+   });
+
+   app.controller('erpCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: Erp Implementation","desc","blah blah");
+   });
+
+   app.controller('DigitalMarketingCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: Digital Marketing","desc","blah blah");
+   });
+
+   app.controller('MobileCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: Mobile","desc","blah blah");
+   });
+
+   app.controller('WebCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: Website","desc","blah blah");
+   });
+
+   app.controller('TeamCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: Team","desc","blah blah");
+   });
+
+   app.controller('CntCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: Contact","desc","blah blah");
+   });
