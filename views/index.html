@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title ng-bind="metaservice.metaTitle()">Test</title>
-    <meta name="description" content="{{ metaservice.metaDescription() }}" />
-    <meta name="keywords" content="{{ metaservice.metaKeywords() }}" />
+    <title ng-bind="metaservice.metaTitle()"></title>
+    <meta name="description" content="{{ metaservice.metaDescription() }}"/>
+    <meta name="keywords" content="{{ metaservice.metaKeywords() }}"/>
     <link rel="icon" href="img/icon.ico">
     
     <!-- css -->
@@ -31,7 +31,7 @@
 
 </head>
 
-<body ng-controller="NavCtl" onclick="initialize()">
+<body ng-controller="NavCtl" onload="initialize()">
     <nav id="header" class="navbar navbar-inverse">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
