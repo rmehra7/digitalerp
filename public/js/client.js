@@ -85,9 +85,9 @@ app.controller('NavCtl', function($scope, $http, $location, $route) {
    }
 
    $scope.contact = function() {
-      $location.path('/contact')
-   }
-
+      $location.path('/contact');
+    }
+    
    $scope.team = function() {
       $location.path('/team')
    }
