@@ -84,7 +84,7 @@
 }
 
   .test .navbar-nav > li > a {
-    color: white;
+    color: #7e73b7;
   }
   .test .navbar-nav > .active > a,
  .test .navbar-nav > .active > a:hover,
@@ -116,8 +116,10 @@
   width: 60%;
   font-size: 20px;
 }
-
-
 .navbar-inverse{
   background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: black;
 }
