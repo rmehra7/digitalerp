@@ -42,6 +42,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
          controller: 'WebCtl'
       })
 
+      .when('/ecommerce', {
+         templateUrl: 'partials/ecommerce.html',
+         controller: 'WebCtl'
+      })
+
       .when('/team', {
          templateUrl: 'partials/team.html',
          controller: 'TeamCtl'
@@ -74,6 +79,10 @@ app.controller('NavCtl', function($scope, $http, $location, $route) {
 
    $scope.website = function() {
       $location.path('/website')
+   }
+
+   $scope.ecommerce = function() {
+      $location.path('/ecommerce')
    }
 
    $scope.digitalmarketing = function() {
