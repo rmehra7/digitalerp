@@ -14,7 +14,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
       .when('/', {
          templateUrl: 'partials/index.html',
-         controller: 'NavCtl'
+         controller: 'HomeCtl'
       })
 
       .when('/about', {
