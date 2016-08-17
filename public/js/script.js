@@ -8,22 +8,34 @@ function myFunction() {
   }
 }
 
-function init_map() {
-var var_location = new google.maps.LatLng(22.7229, 75.8845);
+function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(22.7229, 75.8845),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
 
-var var_mapoptions = {
-		center: var_location,
-		zoom: 14
-};
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+      }
 
-var var_marker = new google.maps.Marker({
-	position: var_location,
-	map: var_map,
-	title:"Digital Marketing Pvt. Ltd."});
+// function initialize() {
+// var var_location = new google.maps.LatLng(22.7229, 75.8845);
 
-var var_map = new google.maps.Map(document.getElementById("map"),
-	var_mapoptions);
+// var var_mapoptions = {
+// 		center: var_location,
+// 		zoom: 14
+// }
 
-var_marker.setMap(var_map);	
-}
+// var var_marker = new google.maps.Marker({
+// 	position: var_location,
+// 	map: var_map,
+// 	title:"Digital Marketing Pvt. Ltd."});
+
+// var var_map = new google.maps.Map(document.getElementById("map"),
+// 	var_mapoptions);
+
+// var_marker.setMap(var_map);	
+// }
+
 

@@ -178,7 +178,7 @@
     color: white;
     border:none;
   }
-#map{
+#map_canvas{
   min-height: 425px;
 }
 
