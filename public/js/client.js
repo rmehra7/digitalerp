@@ -14,7 +14,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
       .when('/', {
          templateUrl: 'partials/index.html',
-         controller: 'NavCtl'
+         controller: 'HomeCtl'
       })
 
       .when('/about', {
@@ -109,30 +109,47 @@ app.service('MetaService', function() {
           metaKeywords: function() { return metaKeywords; }
        }
     });
+    
+    app.controller('HomeCtl',function($scope,$rootScope,MetaService){
+      $rootScope.metaservice = MetaService;
+      $rootScope.metaservice.set("DIGITAL ERP: Home",
+        "Digital Marketing System is a leading software company which provide ERP software,web development,digital marketing,search engine optimization and mobile application development",
+        "Digital Marketing System indore, erp software, website development indore, seo, digital marketing, software indore, custom erp indore");
+   });
 
    app.controller('AboutCtl',function($scope,$rootScope,MetaService){
       $rootScope.metaservice = MetaService;
-      $rootScope.metaservice.set("DIGITAL ERP: About","desc","blah blah");
+      $rootScope.metaservice.set("DIGITAL ERP: About",
+        "Digital ERP is enterprise that provide all services to the growth of organization",
+        "About us, Know about our company, Digital ERP");
    });
 
    app.controller('erpCtl',function($scope,$rootScope,MetaService){
       $rootScope.metaservice = MetaService;
-      $rootScope.metaservice.set("DIGITAL ERP: Erp Implementation","desc","blah blah");
+      $rootScope.metaservice.set("DIGITAL ERP: Erp Implementation",
+        "Digital marketing system customized erp software according to the requirement of clinets at affordable rate",
+        "erp software in indore, custom software, financial management erp, inventory & warehouse wanagement erp, pay roll & HR management erp,custom erp software indore,hotel erp");
    });
 
    app.controller('DigitalMarketingCtl',function($scope,$rootScope,MetaService){
       $rootScope.metaservice = MetaService;
-      $rootScope.metaservice.set("DIGITAL ERP: Digital Marketing","desc","blah blah");
+      $rootScope.metaservice.set("DIGITAL ERP: Digital Marketing",
+        "Increase your presence globally by digital marketing, seo provided by digital marketing system",
+        "Digital marketing, seo, smo, ppc, seo indore, digital marketing indore, search engine optimization indore, marketing indore");
    });
 
    app.controller('MobileCtl',function($scope,$rootScope,MetaService){
       $rootScope.metaservice = MetaService;
-      $rootScope.metaservice.set("DIGITAL ERP: Mobile","desc","blah blah");
+      $rootScope.metaservice.set("DIGITAL ERP: Mobile",
+        "Digital marketing system develop mobile application in android and Ios operating system as their is an increase mobile users",
+        "mobile application development, mobile app indore, appication development indore, software development indore, digital marketing");
    });
 
    app.controller('WebCtl',function($scope,$rootScope,MetaService){
       $rootScope.metaservice = MetaService;
-      $rootScope.metaservice.set("DIGITAL ERP: Website","desc","blah blah");
+      $rootScope.metaservice.set("DIGITAL ERP: Website",
+        "Digital marketing system provide website development and maintenance considering all security aspects",
+        "web development indore, website development, develop website, update website, website indore, maintenance of website");
    });
 
    app.controller('TeamCtl',function($scope,$rootScope,MetaService){
@@ -142,5 +159,7 @@ app.service('MetaService', function() {
 
    app.controller('CntCtl',function($scope,$rootScope,MetaService){
       $rootScope.metaservice = MetaService;
-      $rootScope.metaservice.set("DIGITAL ERP: Contact","desc","blah blah");
+      $rootScope.metaservice.set("DIGITAL ERP: Contact",
+        "Contact as at, mail us at",
+        "Contact us, call on, contact no. digital marketing system, digital marketing system indore contact number");
    });
