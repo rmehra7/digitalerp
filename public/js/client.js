@@ -44,7 +44,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
       .when('/ecommerce', {
          templateUrl: 'partials/ecommerce.html',
-         controller: 'WebCtl'
+         controller: 'EcoCtl'
       })
 
       .when('/team', {
@@ -112,11 +112,65 @@ app.controller('NavCtl', function($scope, $http, $location, $route) {
    }
 
 });
+function HomeCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'HOME', 
+    pageDescription : 'Home page' 
+  }; 
+}
 
 function AboutCtl($scope) { 
   $scope.$parent.seo = { 
     pageTitle : 'ABOUT', 
     pageDescription : 'ABOUT US' 
+  }; 
+}
+
+function erpCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'ERP Implementaton', 
+    pageDescription : 'ABOUT US' 
+  }; 
+}
+
+function DigitalMarketingCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'Digital Marketing', 
+    pageDescription : 'ABOUT US' 
+  }; 
+}
+
+function MobileCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'Mobile Development', 
+    pageDescription : 'ABOUT US' 
+  }; 
+}
+
+function WebCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'Website Development', 
+    pageDescription : 'ABOUT US' 
+  }; 
+}
+
+function EcoCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'E-Commerce Development', 
+    pageDescription : 'E-Commerce' 
+  }; 
+}
+function TeamCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'TEAM', 
+    pageDescription : 'OUR TEAM' 
+  }; 
+}
+
+function CntCtl($scope) { 
+  $scope.$parent.seo = { 
+    pageTitle : 'CONTACT', 
+    pageDescription : 'CONTACT US' 
   }; 
 }
 
