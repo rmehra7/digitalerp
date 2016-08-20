@@ -571,8 +571,22 @@ section.mid-parallax-fix {
 
 .logos-container{
   padding-top: 50px;
+<<<<<<< HEAD
 }
 
 .service-content{
   padding: 25px
 }
+||||||| merged common ancestors
+}
+=======
+}
+
+.service-content{
+  padding: 25px
+}
+
+.erp-content{
+  padding-top: 10px
+}
+>>>>>>> 6802b073ae4dfa0354d8cdecc4b4a86b226a0d5c
